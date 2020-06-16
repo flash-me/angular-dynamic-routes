@@ -1,0 +1,13 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "@angular-dynamic-routes/shared",
+  "version": "1.0.0",
+  "ngPackage": {
+    "dest": "../../dist/shared",
+    "lib": {
+      "entryFile": "./shared.lib.ts",
+      "umdId": "lib.shared"
+    },
+    "deleteDestPath": true
+  }
+}

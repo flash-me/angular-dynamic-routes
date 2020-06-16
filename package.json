@@ -1,0 +1,36 @@
+{
+  "name": "angular-dynamic-routes",
+  "version": "1.0.0",
+  "author": {
+    "email": "adem@simsek.dev",
+    "name": "Adem Simsek",
+    "url": "https://twitter.com/simsek_dev"
+  },
+  "scripts": {
+    "ng": "ng",
+    "serve": "ng serve demo",
+    "shared": "ng run libs:build:shared",
+    "postinstall": "ngcc --properties main es2015"
+  },
+  "browserslist": [
+    "Chrome > 75"
+  ],
+  "private": true,
+  "dependencies": {
+    "@angular/common": "~9.1.11",
+    "@angular/compiler": "~9.1.11",
+    "@angular/core": "~9.1.11",
+    "@angular/platform-browser": "~9.1.11",
+    "@angular/router": "~9.1.11",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.901.8",
+    "@angular-devkit/build-ng-packagr": "~0.901.8",
+    "@angular/cli": "~9.1.8",
+    "@angular/compiler-cli": "~9.1.11",
+    "ng-packagr": "~9.1.5",
+    "typescript": "~3.8.3"
+  }
+}
