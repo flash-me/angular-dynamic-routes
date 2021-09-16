@@ -1,11 +1,29 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Angular Dynamic Routes</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Angular Dynamic Routes</title>
+		<base href="/">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+	</body>
+	<script type="importmap">
+		{
+			"imports": {
+				"rxjs": "https://cdn.skypack.dev/rxjs",
+				"rxjs/operators": "https://cdn.skypack.dev/rxjs/operators",
+				"@angular/core": "/node_modules/@angular/core/fesm2015/core.js",
+				"@angular/common": "/node_modules/@angular/common/fesm2015/common.js",
+				"@angular/router": "/node_modules/@angular/router/fesm2015/router.js",
+				"@angular/platform-browser": "/node_modules/@angular/platform-browser/fesm2015/platform-browser.js",
+				"@angular-dynamic-routes/main": "/dist/main/fesm2015/angular-dynamic-routes-main.js",
+				"@angular-dynamic-routes/shared": "/dist/shared/fesm2015/angular-dynamic-routes-shared.js"
+			}
+		}
+	</script>
+	<script type="module" src="https://cdn.skypack.dev/zone.js@0.11.4"></script>
+	<script type="module">
+		import "@angular-dynamic-routes/main";
+	</script>
 </html>

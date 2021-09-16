@@ -2,11 +2,12 @@
 
 Dynamically loading prebuilt angular libraries at runtime including their child routes.
 
-1. Build Shared Angular Lib (npm run shared)
-2. Serve the app (ng serve or npm run serve)
-3. Click on the button
-4. ???
-5. Profit
+1. npm run main
+2. npm run shared
+3. npm run serve
+4. Click on the button
+5. ???
+6. Profit
 
 cheers
 flash ⚡

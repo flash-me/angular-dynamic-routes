@@ -37,14 +37,8 @@ export class SharedFooComponent { }
 	])
 	]
 })
-export class SharedMfeModule {
+export class SharedModule {
 	constructor(router: Router) {
 		console.log(router.config);
 	}
 }
-
-/**
- * Returns the SharedMfeModule Type that can be used for lazy loading
- * Consider an unified interface among all libraries
- */
-export const getModule = () => SharedMfeModule;

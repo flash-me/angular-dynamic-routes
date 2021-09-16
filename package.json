@@ -1,36 +1,33 @@
 {
   "name": "angular-dynamic-routes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "email": "adem@simsek.dev",
-    "name": "Adem Simsek",
-    "url": "https://twitter.com/simsek_dev"
+    "name": "Adem Simsek"
   },
   "scripts": {
-    "ng": "ng",
-    "serve": "ng serve demo",
-    "shared": "ng run libs:build:shared",
-    "postinstall": "ngcc --properties main es2015"
+    "main": "ng-packagr -p projects/main/package.json -c projects/main/tsconfig.json",
+    "shared": "ng-packagr -p projects/shared/package.json -c projects/shared/tsconfig.json",
+    "serve": "live-server demo --mount=/dist:./dist --mount=/node_modules:./node_modules --entry-file=index.html",
+    "postinstall": "ngcc --properties es2015"
   },
   "browserslist": [
-    "Chrome > 75"
+    "Chrome > 89"
   ],
   "private": true,
   "dependencies": {
-    "@angular/common": "~10.1.4",
-    "@angular/compiler": "~10.1.4",
-    "@angular/core": "~10.1.4",
-    "@angular/platform-browser": "~10.1.4",
-    "@angular/router": "~10.1.4",
-    "tslib": "^2.0.1",
-    "zone.js": "~0.10.3"
+    "@angular/common": "~12.2.6",
+    "@angular/compiler": "~12.2.6",
+    "@angular/core": "~12.2.6",
+    "@angular/platform-browser": "~12.2.6",
+    "@angular/router": "~12.2.6",
+    "tslib": "^2.0.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1001.4",
-    "@angular-devkit/build-ng-packagr": "~0.1001.4",
-    "@angular/cli": "~10.1.4",
-    "@angular/compiler-cli": "~10.1.4",
-    "ng-packagr": "~10.1.2",
-    "typescript": "~4.0.3"
+    "@angular/cli": "~12.2.6",
+    "@angular/compiler-cli": "~12.2.6",
+    "live-server": "^1.2.1",
+    "ng-packagr": "~12.2.1",
+    "typescript": "~4.3.5"
   }
 }
