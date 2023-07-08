@@ -24,7 +24,7 @@
     "tslib": "^2.0.1"
   },
   "devDependencies": {
-    "@angular/cli": "~12.2.6",
+    "@angular/cli": "~12.2.18",
     "@angular/compiler-cli": "~12.2.6",
     "live-server": "^1.2.1",
     "ng-packagr": "~12.2.1",
